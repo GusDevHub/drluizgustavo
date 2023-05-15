@@ -1,0 +1,909 @@
+/* CSS Document */
+/* IMPORTAÇÕES */
+@import url("normalize.css");
+@import url("hover.css");
+/* FONTES */
+@import url("../webfonts/myriad-pro-regular/stylesheet.css");
+@import url("../webfonts/proxima-nova-regular/stylesheet.css");
+@import url("../webfonts/stag-sans-round-light/stylesheet.css");
+@import url("../webfonts/swiss721-cn-bt-bold/stylesheet.css");
+@import url("../webfonts/swiss721-cn-bt-roman/stylesheet.css");
+html {
+	font-size: 62.5%;
+}
+
+/* RELATIVO A VERSAO ACIMA DE 768px */
+@media screen and (min-width: 768px) {
+.mobile {
+	display: none !important;
+	visibility: hidden !important;
+}
+}
+/* LAYOUT GLOBAL */
+* {
+	text-rendering: optimizeLegibility;
+}
+body {
+	background: url(../img/fundo.jpg) no-repeat left top #fff;
+	background-size: 100%;
+	color: #373d3d;
+	font-family: 'swis721_cn_btroman';
+	font-size: 1.8rem;
+	margin: 0 auto;
+	max-width: 2000px;
+	min-width: 280px;
+	position: relative;
+	z-index: 2;
+}
+.banners .corpo, .titulos, .conteudos, #rodape, .rodape {
+	position: relative;
+	z-index: 5;
+}
+.topo {
+	display: block;
+	height: 186px;
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+	z-index: 5;
+}
+#logo {
+	margin-top: 47px;
+	margin-left: 1.967%;
+	max-width: 397px;
+	width: 33.9%;
+	z-index: 20 !important;
+}
+@media screen and (max-width: 1169px) and (min-width: 768px) {
+#logo {
+	margin-top: 3%;
+	width: 397px;
+}
+}
+#logo a {
+}
+.logo {
+	max-width: 397px;
+	width: 100%;
+}
+.navegacao {
+	border-bottom: solid 1px #0b7e8d;
+	display: block;
+	font-family: 'swis721_cn_btroman';
+	font-size: 1.7rem;
+	margin: 0 auto;
+	max-width: 2000px;
+	position: absolute;
+	right: 0;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.051);
+	text-transform: uppercase;
+	top: 59px;
+	width: 100%;
+	z-index: 20 !important;
+}
+.navegacao ul {
+	background: url(../img/menu-fundo-linha.png) repeat-x left center rgba(255, 255, 255, 0.741);
+	border-radius: 50px 0 0 50px;
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.137);
+	display: block;
+	float: right;
+	list-style: none;
+	margin: 0 auto;
+	max-height: 50px;
+	max-width: 59.3%;
+	padding: 0;
+	position: relative;
+	top: 21px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	width: 100%;
+	z-index: 2;
+}
+@media screen and (min-width: 1681px) {
+.navegacao ul {
+	max-width: 1158px;
+}
+}
+@media screen and (max-width: 1230px) and (min-width: 1100px) {
+.navegacao ul {
+	max-width: 68%;
+}
+}
+@media screen and (max-width: 1099px) and (min-width: 979px) {
+.navegacao ul {
+	max-width: 75%;
+}
+}
+@media screen and (max-width: 978px) and (min-width: 879px) {
+.navegacao ul {
+	max-width: 85%;
+}
+}
+@media screen and (max-width: 878px) and (min-width: 800px) {
+.navegacao ul {
+	max-width: 92%;
+}
+}
+@media screen and (max-width: 799px) and (min-width: 768px) {
+.navegacao ul {
+	max-width: 98%;
+}
+}
+.navegacao ul li {
+	display: inline-block;
+	position: relative;
+}
+.navegacao ul li a {
+	color: #0b7e8d;
+	display: block;
+	padding: .9rem .8em;
+	position: relative;
+}
+.navegacao ul li a:after {
+	background: url(../img/menu-divisao.png) no-repeat left top;
+	content: '';
+	display: block;
+	height: 11px;
+	left: -6%;
+	position: absolute;
+	top: 33%;
+	width: 11px;
+}
+.navegacao ul li:first-child a:after {
+	display: none !important;
+}
+.navegacao ul li a:hover, .navegacao ul li a:focus {
+	color: #01b2bb;
+	text-decoration: none;
+}
+.banners-wrap {
+	display: none;
+	float: left;
+	margin: 0 auto;
+	max-width: 2000px;
+	width: 100%;
+}
+.banners {
+	margin: 0 auto;
+	max-width: 1170px;
+	position: relative;
+	width: 100%;
+}
+.banners-fundo {
+	bottom: -20px;
+	display: block;
+	left: 0px;
+	max-width: 1170px;
+	position: absolute;
+	width: 100%;
+	z-index: 1 !important;
+}
+.banner {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	max-width: 1170px;
+	position: relative;
+	width: 100%;
+	z-index: 2;
+}
+@media screen and (max-width: 1220px) {
+.banner {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+}
+.banners-nav {
+	bottom: -45px;
+	left: 0;
+	margin: 0 auto;
+	max-width: 1170px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 10;
+}
+.banners-nav-esq {
+	background: url(../img/banners-nav-esq.svg) no-repeat left top;
+	display: inline-block;
+	height: 17px;
+	width: 16px;
+}
+.banners-itens {
+	display: inline-block;
+	list-style: none;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	margin-bottom: 0;
+	padding: 0 10px;
+	position: relative;
+	z-index: 10;
+}
+.banners-itens li {
+	background: #115779;
+	border: solid 3px #115779;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	display: inline-block;
+	height: 12px;
+	margin: 0 3px;
+	width: 12px;
+}
+ .banners-itens li:hover {
+	background: #ffffff !important;
+}
+.banners-itens li a {
+	display: block;
+	height: 12px;
+	width: 12px;
+}
+.banners-item-ativo {
+	background: #ffffff !important;
+	cursor: text;
+}
+.banners-nav-dir {
+	background: url(../img/banners-nav-dir.svg) no-repeat left top;
+	display: inline-block;
+	height: 17px;
+	width: 16px;
+}
+.corpo {
+	position: relative;
+	width: 100%;
+}
+.titulos {
+	background: #ffffff;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 2.28% 0 .9% 2.74%;
+	position: relative;
+	z-index: 9;
+}
+.titulos h1 {
+	border-bottom: solid 2px #01b2bb;
+	color: #0b7e8d;
+	font-family: 'swis721_cn_btroman';
+	font-size: 4rem;
+	font-weight: normal;
+	letter-spacing: -.3rem;
+	margin: 0;
+	padding: 0;
+	padding-right: 2%;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.071);
+	width: 100%;
+}
+.conteudos {
+	background: #ffffff;
+	margin: 0 auto;
+	max-width: 1170px;
+	min-height: 50px;
+	padding: 2rem 1% 5px 3%;
+	position: relative;
+	z-index: 9;
+}
+@media screen and (max-width: 1220px) and (min-width: 768px) {
+.conteudos {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+}
+.menu-interno {
+	border: solid 1px #dcdcdc;
+	display: inline-block;
+	float: left;
+	font-family: 'swis721_cn_btroman';
+	font-size: 1.5rem;
+	margin-right: 2%;
+	padding: 1.2em 1.2em 1.2em 0.5em;
+	position: relative;
+	width: 26%;
+	z-index: 9 !important;
+}
+.menu-interno-cabecalho {
+	border-bottom: solid 1px #dcdcdc;
+	color: #9acdc0;
+	display: block;
+	font-weight: 600;
+	padding-bottom: .6em;
+	text-transform: uppercase;
+	width: 100%;
+}
+.menu-interno ul {
+	list-style: none;
+	margin-bottom: 0;
+	margin-top: .6em;
+	padding-left: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+.menu-interno ul li {
+	border-bottom: solid 1px #dcdcdc;
+	width: 100%;
+}
+.menu-interno ul li:last-child {
+	border-bottom: none;
+}
+.menu-interno ul li a {
+	color: #086a77;
+	display: block;
+	padding: .3em 0;
+	width: 100%;
+}
+.menu-interno ul li:last-child a {
+	padding-bottom: 0;
+}
+.menu-interno ul li a:before {
+	content: "\bb";
+	display: inline-block;
+	height: 12px;
+	margin-left: .4em;
+	margin-right: .3em;
+	width: 12px;
+}
+.conteudos-com-navegacao {
+	display: inline-block;
+	float: left;
+	padding-bottom: 35px;
+	position: relative;
+	width: 70%;
+	z-index: 9;
+}
+.botao-voltar {
+	background: #ffffff;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding-bottom: .893%;
+	text-align: right;
+}
+.botao-voltar-icone {
+	margin-right: 3%;
+	max-width: 94px;
+	position: relative;
+	z-index: 9;
+}
+#rodape {
+	background: #086a77;
+	color: #ffffff;
+	float: left;
+	padding-top: 24px;
+	width: 100%;
+}
+.rodape a {
+	color: #ffffff;
+}
+.rodape {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+}
+@media screen and (max-width: 1220px) and (min-width: 768px) {
+.rodape {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+}
+.contatos {
+	display: block;
+	float: left;
+	width: 70%;
+}
+.telefone-email {
+	float: left;
+	border-bottom: solid 1px #2b7f8a;
+	margin-bottom: 22px;
+	max-width: 508px;
+	padding-bottom: 19px;
+	width: 80%;
+}
+@media screen and (min-width: 768px) {
+.telefone-email {
+	width: 508px;
+}
+}
+.rodape-telefone {
+	float: left;
+	display: inline-block;
+	float: left;
+	font-family: 'swis721_cn_btroman';
+	font-size: 2rem;
+	line-height: 2.3rem;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.051);
+	width: 41%;
+}
+.telefone-icone {
+	border: solid 3px #ffffff;
+	float: left;
+	margin-right: 10px;
+	max-height: 46px;
+	max-width: 51px;
+	padding: 8px 15px;
+	width: 100%;
+}
+.telefone-prefixo {
+	float: left;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	margin-right: 3px;
+}
+.telefone-numero {
+	float: left;
+	font-size: 2.5rem;
+}
+.email {
+	display: inline-block;
+	float: left;
+	font-family: 'swis721_cn_btroman';
+	font-size: 2rem;
+	line-height: 4.3rem;
+	width: 59%;
+}
+.email-icone {
+	border: solid 3px #ffffff;
+	float: left;
+	margin-right: 10px;
+	max-height: 46px;
+	max-width: 51px;
+	padding: 13px 12px;
+	width: 100%;
+}
+.enderecos {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.enderecos-cabecalho {
+	color: #9acdc0;
+	font-family: 'swis721_cn_btroman';
+	font-size: 1.8rem;
+	margin-bottom: 18px;
+}
+.enderecos address {
+	display: inline-block;
+	float: left;
+	font-family: 'swis721_cn_btroman';
+	font-size: 1.5rem;
+	width: 30%;
+}
+.endereco-2 {
+	margin: 0 1%;
+	width: 35% !important;
+}
+.endereco-3 {
+	width: 32% !important;
+}
+.gosites-facebook {
+	float: right;
+	width: 30%;
+}
+#gosites {
+	color: #ffffff;
+	float: right;
+	font-family: 'myriad pro regular';
+	font-size: 1.1rem;
+	text-align: right;
+	width: 100%;
+}
+.gosites {
+	margin-left: 5px;
+	max-width: 75px;
+}
+.facebook {
+	background: #ffffff;
+	float: left;
+	margin-top: 20px;
+	max-width: 470px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/******************* menu mobile MODAL *******************/
+.menu-mobile-open {
+	overflow: hidden;
+}
+.menu-mobile {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+.menu-mobile.fade-menu-mobile .menu-mobile-dialog {
+	-webkit-transition: -webkit-transform .3s ease-out;
+	-o-transition: -o-transform .3s ease-out;
+	transition: transform .3s ease-out;
+	-webkit-transform: translate(0, -25%);
+	-ms-transform: translate(0, -25%);
+	-o-transform: translate(0, -25%);
+	transform: translate(0, -25%);
+}
+.menu-mobile.in .menu-mobile-dialog {
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+.menu-mobile-open .menu-mobile {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.menu-mobile-dialog {
+	position: relative;
+	width: auto;
+	margin: 0;
+}
+.menu-mobile-content {
+	position: relative;
+	background-color: transparent;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: none;
+	border: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.modal-backdrop {
+	background: url(../img/logo.svg) no-repeat 65vw bottom;
+	background-size: 300%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #f0f4f4;
+}
+.modal-backdrop.fade {
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+.modal-backdrop.in {
+	filter: alpha(opacity=50);
+	opacity: .99;
+}
+.menu-mobile-header {
+	border-bottom: none;
+	padding: 30px;
+	position: relative;
+	text-align: right;
+	z-index: 1000;
+}
+.modal-header .fechar {
+	margin-top: -2px;
+}
+.menu-mobile-title {
+	line-height: 1.42857143;
+	margin: 0;
+	position: relative;
+	z-index: 1000;
+}
+.menu-mobile-body {
+	position: relative;
+	padding: 0;
+	z-index: 1000;
+}
+.menu-mobile-body .menu-movel {
+	position: relative;
+	z-index: 1000;
+}
+.menu-mobile-footer {
+	display: none;
+	visibility: hidden;
+}
+
+@media (min-width: 768px) {
+.menu-mobile-dialog {
+	width: 600px;
+	margin: 0;
+}
+.menu-mobile-content {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.menu-mobile-sm {
+	width: 300px;
+}
+}
+
+@media (min-width: 992px) {
+.menu-mobile-lg {
+	width: 900px;
+}
+}
+
+/******************* fim menu mobile *******************/
+
+
+
+
+
+
+
+
+
+/* RELATIVO A VERSAO MOVEL */
+@media screen and (max-width: 767px) and (min-width: 176px) {
+* {
+	text-rendering: geometricPrecision;
+	-webkit-transition: all ease .7s;
+	-moz-transition: all ease .7s;
+	transition: all ease .7s;
+}
+.desktop {
+	display: none !important;
+	visibility: hidden !important;
+}
+a:focus {
+	outline: none;
+}
+body {
+	padding-top: 7rem;
+}
+.topo {
+	display: none !important;
+	visibility: hidden !important;
+}
+.mobile {
+	display: block !important;
+	visibility: visible !important;
+}
+.mobile-topo {
+	background: #f0f4f4;
+	box-shadow: rgba(6, 57, 106, 0.329412) 0px 1px 5px 0px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 50;
+}
+#logo-mobile {
+	height: 5.4rem;
+	margin-left: .5rem;
+	margin-top: .7143rem;
+	max-width: 240px;
+	position: relative;
+	text-align: left;
+	z-index: 51;
+}
+.logo-mobile {
+	max-width: 320px;
+	position: relative;
+	z-index: 52;
+}
+#nav-mobile {
+	height: 40px;
+	margin-right: .5rem;
+	margin-top: .7143rem;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 40px;
+	z-index: 52;
+}
+#nav-mobile {
+	position: fixed;
+	z-index: 60;
+}
+.logo-mobile-menu {
+	margin-top: 0.7857em;
+	max-width: 179px;
+}
+/* botao fechar (menu) */
+.fechar {
+	max-width: 40px;
+	position: absolute;
+	right: .5em;
+	top: 0px;
+	width: 13%;
+}
+.fechar img {
+	margin-right: .5em;
+	margin-top: .7143em;
+	width: 100%;
+}
+/* menu movel */
+.menu-movel {
+	list-style: none;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+}
+.menu-movel li a {
+	color: #0b7e8d;
+	font-family: 'swis721_cn_btroman';
+	font-weight: 400;
+	font-size: 2.8rem;
+	display: block;
+	letter-spacing: -.0r2em;
+	margin-top: .2rem;
+	padding: .01rem 1rem;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.11);
+	text-transform: uppercase;
+	vertical-align: middle;
+}
+.menu-movel li a:hover {
+	background: #0b7e8d;
+	color: #ffffff;
+	text-decoration: none;
+}
+.banners-fundo {
+	bottom: -8%;
+}
+.corpo {
+	margin-top: 0;
+	padding-top: 15px;
+}
+.titulos {
+	padding-left: 2%;
+}
+.titulos h1 {
+	font-size: 2.4rem;
+	left: 0;
+	letter-spacing: -.1rem;
+	position: relative;
+	top: 0;
+}
+.conteudos {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.menu-interno {
+	display: block;
+	float: none;
+	font-size: 1.15em;
+	margin-bottom: 10px;
+	margin-right: 0;
+	padding: .3em;
+	width: 100%;
+}
+.menu-interno-cabecalho {
+	border-bottom: solid 1px #dcdcdc;
+	font-weight: 600;
+	margin-bottom: 6px;
+	padding-bottom: 2px;
+	width: 100%;
+}
+.menu-interno ul li {
+	border-bottom: 0;
+	display: inline-block;
+	margin-bottom: 6px;
+	vertical-align: middle;
+	width: 44.8vw;
+}
+.menu-interno ul li a {
+	border: solid 1px #dcdcdc;
+	display: block;
+	padding: 2px 0;
+	text-align: left;
+	width: 100%;
+}
+.conteudos-com-navegacao {
+	display: block;
+	float: none;
+	padding-bottom: 35px;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.rodape {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.contatos {
+	width: 100%;
+}
+.telefone-email {
+	max-width: 760px;
+	width: 100%;
+}
+.enderecos {
+	border-bottom: solid 1px #2b7f8a;
+	margin-bottom: 15px;
+}
+.gosites-facebook {
+	float: left;
+	width: 100%;
+}
+#gosites {
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	text-align: center;
+	width: 100%;
+}
+.facebook {
+	float: none;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 560px) {
+.menu-interno {
+	font-size: 1.6rem;
+}
+.menu-interno ul li {
+	width: 100%;
+}
+}
+@media screen and (max-width: 542px) {
+.rodape-telefone, .email {
+	display: block;
+	width: 100% !important;
+	text-align: center;
+}
+.telefone-icone {
+	display: inline-block;
+	float: none;
+}
+.rodape-telefone br {
+	display: none;
+}
+.rodape-telefone .mobile {
+	display: inline-block !important;
+	float: none;
+	width: 233px;
+	text-align: left;
+}
+.telefone-prefixo {
+	margin-left: 10px;
+}
+.rodape-telefone .mobile, .rodape-telefone span {
+	display: inline-block;
+	float: none;
+}
+.email {
+	margin: 15px auto;;
+}
+.email-icone {
+	display: inline-block;
+	float: none;
+}
+.enderecos {
+	border: solid 1px #ffffff;
+	padding-bottom: 15px;
+}
+.enderecos-cabecalho {
+	border-bottom: solid 1px #ffffff;
+	text-align: center;
+}
+.enderecos address {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100% !important;
+}
+.endereco-2 {
+	border-bottom: dotted 1px #2b7f8a;
+	border-top: dotted 1px #2b7f8a;
+	margin: 15px auto !important;
+	padding: 15px 0;
+}
+}
+@media screen and (max-width: 329px) {
+.rodape-telefone .mobile {
+	font-size: 1.4rem;
+	width: 70vw;
+}
+}
